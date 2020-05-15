@@ -81,6 +81,7 @@ public class BargainsController implements InitializingBean {
      * @param verifyCode: 验证码
      * @return: com.k2j.bargains.common.result.Result<java.lang.String> 被隐藏的秒杀接口路径
      **/
+    @SpringControllerLimit(errorCode = 200)
     @AccessLimit(seconds = 5, maxAccessCount = 5, needLogin = true)
     @RequestMapping(value = "path", method = RequestMethod.GET)
     @ResponseBody
@@ -172,7 +173,6 @@ public class BargainsController implements InitializingBean {
      * @return: com.k2j.bargains.common.result.Result<java.lang.Integer> 订单详情或错误码
      **/
     // {path}为客户端回传的path，最初也是由服务端产生的
-    @SpringControllerLimit(errorCode = 200)
     @RequestMapping(value = "{path}/doBargains", method = RequestMethod.POST)
     @ResponseBody
     public Result<Integer> doBargains(Model model, UserVo user,

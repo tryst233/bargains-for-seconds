@@ -60,7 +60,7 @@
 
    ``java -jar bargains-for-seconds-gateway/target/bargains-for-seconds-gateway-0.0.1-SNAPSHOT.jar``
 
-4. 访问地址：http://localhost:8080/user/index，注册登录即可。
+4. 访问地址：<http://localhost:8080/user/index>，注册登录即可。
 
 ## 系统架构
 
@@ -83,7 +83,8 @@
    - bargains-for-seconds-cache：缓存模块
    - bargains-for-seconds-mq：消息队列模块
 
-2. 前后端交互
+2. [前后端交互](https://github.com/Lasolitude/bargains-for-seconds/blob/master/docs/%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92.md "前后端交互")
+3. [前后端交互接口逻辑实现](https://github.com/Lasolitude/bargains-for-seconds/blob/master/docs/%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%8E%A5%E5%8F%A3%E9%80%BB%E8%BE%91%E5%AE%9E%E7%8E%B0.md "前后端交互接口逻辑实现")
 
 ## 参考
 
